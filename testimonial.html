@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>BabyCare - Daycare Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+       <!-- Navbar start -->
+       <div class="container-fluid border-bottom bg-light wow fadeIn" data-wow-delay="0.1s">
+        <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px">
+            <div class="d-flex justify-content-between">
+                <div class="top-info ps-2">
+                    <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Universitas Negeri Makassar, fik</a></small>
+                    <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@gizitekno</a></small>
+                </div>
+                <div class="top-link pe-2">
+                    <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
+                    <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-twitter text-secondary"></i></a>
+                    <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
+                    <a href="" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-secondary"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-light navbar-expand-xl py-3">
+                <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Nutrition<span class="text-secondary">Atlet</span></h1></a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link">Beranda</a>
+                        <a href="testimonial.html" class="nav-item nav-link active">Kalkulator</a>
+                        <a href="service.html" class="nav-item nav-link">Rencana Makanan</a>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Konsultasi</a>
+                    </div>
+                    <div class="d-flex me-4">
+                        <div id="phone-tada" class="d-flex align-items-center justify-content-center">
+                            <a href="" class="position-relative wow tada" data-wow-delay=".9s" >
+                                <i class="fa fa-phone-alt text-primary fa-2x me-4"></i>
+                                <div class="position-absolute" style="top: -7px; left: 20px;">
+                                    <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="d-flex flex-column pe-3 border-end border-primary">
+                            <span class="text-primary">Have any questions?</span>
+                            <a href="#"><span class="text-secondary">Free: +62 852 1857 1341</span></a>
+                        </div>
+                    </div>
+                    <button class="btn-search btn btn-primary btn-md-square rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-white"></i></button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4">Kalkulator Kalori</h1>
+            </div>
+        </div>
+
+        <div class="container-fluid py-5 about bg-light">
+            <div class="container py-5">
+                <section class="section pb-0">
+                    <div class="container">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-lg-7 text-center text-lg-left">
+                                <h1 class="mb-4">Piramida Gizi Atlet </h1>
+                                <p class="mb-4">Pemenuhan gizi atlet mengacu pada piramida gizi olahraga. Fokus utama piramida gizi olahraga adalah diet gizi seimbang. Dilanjutkan dengan pendampingan gizi olahraga berupa sport food. Selanjutnya suplemen jika diperlukan.</p>
+                                
+                            
+                    </div>
+        
+        <!-- Page Header End -->
+        <style>
+            body {
+                background-color: gainsboro;
+            }
+    
+            .akg-text {
+                color: orange;
+            }
+    
+            table {
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+    
+            td {
+                border-bottom: 1px solid rgb(0, 162, 255);
+                padding: 8px;
+                text-align: left;
+                vertical-align: top;
+            }
+    
+            button {
+                background-color: transparent;
+                /* Set warna latar belakang menjadi transparan */
+                color: rgb(0, 162, 255);
+                /* Set warna teks menjadi biru */
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+    
+            button:hover {
+                background-color: transparent;
+                /* Set warna latar belakang menjadi transparan saat hover */
+                color: rgb(0, 162, 255);
+                /* Set warna teks menjadi lightblue saat hover */
+            }
+    
+            .button-submit {
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+                border-radius: none;
+                border: 1px solid black;
+            }
+    
+            .button-submit:hover {
+                background-color: #45a049;
+                color: white;
+            }
+        </style>
+    
+        <title>Hitung Angka Kecukupan Gizi Anda (AKG)</title>
+    </head>
+    
+    <body>
+    
+        <h1>Hitung Angka Kecukupan Gizi Anda <span class="akg-text">(AKG)</span></h1>
+    
+        <form id="giziForm">
+            <table>
+                <tr>
+                    <td>
+                        <label for="usia">Usia</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" id="usia" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="beratBadan">Berat Badan</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" id="beratBadan" required> <span id="beratSatuan">(kg)</span>
+                        <button type="button" onclick="ubahSatuanBerat('berat')" id="btn-alih-berat">(Alihkan ke
+                            pound)</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tinggi">Tinggi</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="number" id="tinggi" required> <span id="tinggiSatuan">(cm)</span>
+                        <button type="button" onclick="ubahSatuanTinggi('tinggi')" id="btn-alih-tinggi">(Alihkan ke
+                            inci)</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Jenis Kelamin:</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jenisKelamin" value="lakiLaki" required> Laki-laki
+                        <input type="radio" name="jenisKelamin" value="perempuan" required> Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Tingkat Aktivitas</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="tingkatAktivitas" value="jarangSekali" required> Jarang Sekali <br>
+                        <input type="radio" name="tingkatAktivitas" value="sedikitAktif" required> Sedikit Aktif <br>
+                        <input type="radio" name="tingkatAktivitas" value="aktif" required> Aktif <br>
+                        <input type="radio" name="tingkatAktivitas" value="sangatAktif" required> Sangat Aktif <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        <button type="button" onclick="hitungGizi()" class="button-submit">Hitung AKG Saya</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    
+        <p id="hasil" style="font-size: 20px;"></p>
+    
+        <script>
+            function hitungGizi() {
+                var usia = document.getElementById("usia").value;
+                var beratBadan = document.getElementById("beratBadan").value;
+                var tinggi = document.getElementById("tinggi").value;
+                var jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked').value;
+                var tingkatAktivitas = document.querySelector('input[name="tingkatAktivitas"]:checked').value;
+    
+                // Konversi nilai tingkat aktivitas ke angka sesuai dengan catatan
+                var faktorAktivitas;
+                switch (tingkatAktivitas) {
+                    case "jarangSekali":
+                        faktorAktivitas = 1.5;
+                        break;
+                    case "sedikitAktif":
+                        faktorAktivitas = 1.7;
+                        break;
+                    case "aktif":
+                        faktorAktivitas = 1.8;
+                        break;
+                    case "sangatAktif":
+                        faktorAktivitas = 2.1;
+                        break;
+                    default:
+                        faktorAktivitas = 1.0;
+                }
+    
+                var satuanBerat = document.getElementById("beratSatuan").innerHTML;
+                var satuanTinggi = document.getElementById("tinggiSatuan").innerHTML;
+                console.log(satuanBerat);
+                console.log(satuanTinggi);
+    
+                if (satuanBerat === "(pound)") {
+                    beratBadan = beratBadan * 0.453592;
+                }
+    
+                if (satuanTinggi === "(inci)") {
+                    tinggi = tinggi * 2.54;
+                    console.log(tinggi);
+                }
+    
+                var hasilGizi;
+                if (jenisKelamin === "lakiLaki") {
+                    hasilGizi = 662 - (9.53 * usia) + faktorAktivitas * (15.91 * beratBadan + 539.6 * tinggi);
+                } else {
+                    hasilGizi = 354 - (6.91 * usia) + faktorAktivitas * (9.36 * beratBadan + 726 * tinggi);
+                }
+    
+                // Tampilkan hasil
+                document.getElementById("hasil").innerHTML = "Angka Kecukupan Gizi Anda adalah : " + hasilGizi.toFixed(0) + " Kalori";
+            }
+    
+            function ubahSatuanBerat(idInput) {
+                var input = document.getElementById(idInput);
+                var spanSatuan = document.getElementById(idInput + "Satuan");
+                var spanBtn = document.getElementById("btn-alih-berat");
+    
+                if (spanSatuan.innerHTML === "(kg)") {
+                    spanSatuan.innerHTML = "(pound)";
+                    spanBtn.innerText = "(Alihkan ke kg)";
+                } else {
+                    spanSatuan.innerHTML = "(kg)";
+                    spanBtn.innerText = "(Alihkan ke pound)";
+                }
+            }
+    
+            function ubahSatuanTinggi(idInput) {
+                var input = document.getElementById(idInput);
+                var spanSatuan = document.getElementById(idInput + "Satuan");
+                var spanBtn = document.getElementById("btn-alih-tinggi");
+    
+    
+                if (spanSatuan.innerHTML === "(cm)") {
+                    spanSatuan.innerHTML = "(inci)";
+                    spanBtn.innerText = "(Alihkan ke cm)";
+                } else {
+                    spanSatuan.innerHTML = "(cm)";
+                    spanBtn.innerText = "(Alihkan ke inci)";
+                }
+            }
+        </script>
+        
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
+                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">Our Testimonials</h4>
+                    <h1 class="mb-5 display-3">Tangapan mereka mengenai kalkulator ini</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.3s">
+                    <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
+                        <div class="p-4 position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
+                            <div class="d-flex align-items-center">
+                                <div class="border border-primary bg-white rounded-circle">
+                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
+                                </div>
+                                <div class="ms-4">
+                                    <h4 class="text-dark">mujahidin</h4>
+                                    <p class="m-0 pb-3">Profession</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top border-primary mt-4 pt-3">
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
+                        <div class="p-4 position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
+                            <div class="d-flex align-items-center">
+                                <div class="border border-primary bg-white rounded-circle">
+                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
+                                </div>
+                                <div class="ms-4">
+                                    <h4 class="text-dark">glen</h4>
+                                    <p class="m-0 pb-3">Profession</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top border-primary mt-4 pt-3">
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item img-border-radius bg-light border border-primary p-4">
+                        <div class="p-4 position-relative">
+                            <i class="fa fa-quote-right fa-2x text-primary position-absolute" style="top: 15px; right: 15px;"></i>
+                            <div class="d-flex align-items-center">
+                                <div class="border border-primary bg-white rounded-circle">
+                                    <img src="img/testimonial-2.jpg" class="rounded-circle p-2" style="width: 80px; height: 80px; border-style: dotted; border-color: var(--bs-primary);" alt="">
+                                </div>
+                                <div class="ms-4">
+                                    <h4 class="text-dark">aini</h4>
+                                    <p class="m-0 pb-3">Profession</p>
+                                    <div class="d-flex pe-5">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="border-top border-primary mt-4 pt-3">
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <footer class="footer">
+            <div class="section__container footer__container">
+                <div class="footer__col">
+                    <h3>Peduli Gizi</h3>
+                    <p>
+                        website ini adalah website untuk mengukur makanan yang cocok dengan tubuh anda
+                    </p>
+                    <p>
+                        Dengan antarmuka yang ramah pengguna dan beragam, Teman gizi bertujuan untuk memberikan pengalaman mengunkan web ini
+                </div>
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <p>About Us</p>
+                    <p>Our Team</p>
+                    <p>Blog</p>
+                    <p>Book</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Legal</h4>
+                    <p>FAQs</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Resources</h4>
+                    <p>Social Media</p>
+                    <p>Help Center</p>
+                    <p>Partnerships</p>
+                </div>
+            </div>
+            <div class="footer__bar">
+                Copyright © 2023 Gizi teknologi
+            </div>
+        </footer>
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>

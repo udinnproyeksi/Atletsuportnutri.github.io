@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>BabyCare - Daycare Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+               <!-- Navbar start -->
+               <div class="container-fluid border-bottom bg-light wow fadeIn" data-wow-delay="0.1s">
+                <div class="container topbar bg-primary d-none d-lg-block py-2" style="border-radius: 0 40px">
+                    <div class="d-flex justify-content-between">
+                        <div class="top-info ps-2">
+                            <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Universitas Negeri Makassar, fik</a></small>
+                            <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@gizitekno</a></small>
+                        </div>
+                        <div class="top-link pe-2">
+                            <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-facebook-f text-secondary"></i></a>
+                            <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-twitter text-secondary"></i></a>
+                            <a href="" class="btn btn-light btn-sm-square rounded-circle"><i class="fab fa-instagram text-secondary"></i></a>
+                            <a href="" class="btn btn-light btn-sm-square rounded-circle me-0"><i class="fab fa-linkedin-in text-secondary"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container px-0">
+                    <nav class="navbar navbar-light navbar-expand-xl py-3">
+                        <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Nutrition<span class="text-secondary">Atlet</span></h1></a>
+                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="fa fa-bars text-primary"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav mx-auto">
+                                <a href="index.html" class="nav-item nav-link">Beranda</a>
+                                <a href="testimonial.html" class="nav-item nav-link">Kalkulator</a>
+                                <a href="service.html" class="nav-item nav-link active">Rencana Makanan </a>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Konsultasi</a>
+                            </div>
+                            <div class="d-flex me-4">
+                                <div id="phone-tada" class="d-flex align-items-center justify-content-center">
+                                    <a href="" class="position-relative wow tada" data-wow-delay=".9s" >
+                                        <i class="fa fa-phone-alt text-primary fa-2x me-4"></i>
+                                        <div class="position-absolute" style="top: -7px; left: 20px;">
+                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column pe-3 border-end border-primary">
+                                    <span class="text-primary">Have any questions?</span>
+                                    <a href="#"><span class="text-secondary">Free: +62 852 1857 1341</span></a>
+                                </div>
+                            </div>
+                            <button class="btn-search btn btn-primary btn-md-square rounded-circle" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-white"></i></button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+        
+        <!-- Page Header Start -->
+        <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center py-5">
+                <h1 class="display-2 text-white mb-4">Rencana makana atlet</h1>
+                
+            </div>
+        </div>
+        <!-- Page Header End -->
+          <!-- About Start -->
+          <div class="container-fluid py-5 about bg-light">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                            <img src="img/someone.png" alt="illustration" class="img-fluid">
+        
+                    </div>
+                   
+        
+    <section class="section__container popular__container">
+        <h2 class="section__header">Asupan Gizi Atlet</h2>
+        <div class="popular__grid">
+            <div class="popular__card">
+                <img src="img/pexels-andrea-piacquadio-3760259.jpg" alt="popular hotel" />
+                <div class="popular__content">
+                    <div class="popular__card__header">
+                        <h4>Sebelum Bertanding</h4>
+                    </div>
+                    <P>Idealnya makanan sebelum bertanding harus terdiri dari karbohidrat kompleks, protein sedang dan rendah lemak.</P>
+                    <p>1.Tinggi karbohidrat tetapi rendah gula</p>
+                    <p>2.Rendah protein dan lemak,</p>
+                    <p>3.Mengandung paling sedikit tiga gelas air;</p>
+                    <p>4. Mencegah rasa sakit karena kelaparan selama pertandingan</p>
+                    <p>5. Mudah di cerna</p>
+                    <p>Misalnya seperti crackers , roti, biskuit, kue bolu, pisang dan lain-lain. Sebaiknya cara pemasakan lebih baik, rebus, kukus, bakar</p>
+                </div>
+            </div>
+            <div class="popular__card">
+                <img src="img/pexels-andrea-piacquadio-3755440.jpg" alt="popular hotel" />
+                <div class="popular__content">
+                    <div class="popular__card__header">
+                        <h4>Asupan Gizi Saat Pertandingan</h4>
+
+                    </div>
+                    <p>1. Pilih makan tinggi karbohidrat</p>
+                    <p>2.Hindari terlalu banyak gula seperti sirop, softdrink</p>
+                    <p>3.Atur waktu makan sesuai jadwal tanding</p>
+                    <p>4. Perhitungkan waktu cerna makanan</p>
+                    <p>5.Berikan makan tambahan berupa cairan padat gizi 2jam sebelum tanding</p>
+<P>6. Makan malam sebelum hari tanding lebih banyak karbohidrat dan rendah lemak</P>
+  <P>Memberikan cukup cairan dengan interval tertentu.
+    Waktu makan :
+    a. 3-4 jam sebelum tanding: makanan utama nasi + lauk + sayur + buah
+    b. 2-3 jam sebelum tanding: makanan kecil roti/krakers
+    c. 1-2 jam sebelum tanding: makanan cair/minuman jus/teh <1jam sebelum tanding: cairan 
+    </P>
+  <P>Kebutuhan cairan atlet :
+    a. 2,3 – 4 liter perhari.
+    b. Sehari sebelum bertanding minumlah ekstra 2-3 gelas besar.
+    c. 2 jam sebelum tanding minum 2-3 gelas
+    d. 5-15 menit minum 1-2 gelas.</P>
+
+
+
+
+</div>
+            </div>
+            <div class="popular__card">
+                <img src="img/pexels-run-ffwpu-5456559.jpg" alt="popular hotel" />
+                <div class="popular__content">
+                    <div class="popular__card__header">
+                        <h4>Asupan Gizi Setelah Bertanding.</h4>
+
+                    </div>
+                    <p>Segera setelah bertanding minum air dengan suhu 100c (sejuk),1-2 gelas.</p>
+                    <p>½  jam setelah bertanding; juice buah 1 gelas.</p>
+                    <p>3. 1 jam setelah bertanding; juice buah 1 gelas dan snack ringan atau makanan cair yang mengandung hidrat arang sebanyak 300 kalori
+                        4. 2 jam setelah bertanding makan lengkap dengan porsi kecil; sebaiknya diberi lauk yang tidak digoreng dan tidak bersantan dan diberi banyak sayuran dan buah.
+                        5. Sayuran berkuah lebih bermanfaat untuk mencukupi cairan dan mineral, misal soto, sop
+                        6. Empat jam setelah pertanding biasanya atlet
+                        akan merasa lapar. Jadi dapat disiapkan makanan instan yang mudah dimasak pada malam hari sendiri misalnya mie instan, bakso dan lainnya
+                        </p>
+
+                </div>
+            </div>
+           
+    </section>
+     <!-- About Start -->
+     <div class="container-fluid py-5 about bg-light">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                        <img src="img/WhatsApp Image 2023-12-02 at 08.16.02.jpeg" alt="illustration" class="img-fluid">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                    <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius">About Us</h4>
+                    <h1 class="text-dark mb-4 display-5">Metode piring periodisasi gizi </h1>
+                    <p class="text-dark mb-4">Metode piring periodisasi gizi adalah suatu metode pengaturan asupan makanan atlet yang didasarkan pada prinsip periodisasi latihan. Metode ini membagi tahun latihan atlet menjadi beberapa periode waktu, dan setiap periode memiliki kebutuhan nutrisi yang berbeda-beda. Pada setiap periode, atlet dianjurkan untuk mengonsumsi jenis makanan dan nutrisi tertentu yang sesuai dengan kebutuhan latihan dan tujuan yang ingin dicapai. Metode piring periodisasi gizi ini dapat membantu atlet untuk memaksimalkan performa dan meminimalkan risiko cedera serta kelelahanmetode piring periodisasi gizi adalah suatu metode pengaturan asupan makanan atlet yang didasarkan pada prinsip periodisasi latihan. Metode ini membagi tahun latihan atlet menjadi beberapa periode waktu, dan setiap periode memiliki kebutuhan nutrisi yang berbeda-beda. Pada setiap periode, atlet dianjurkan untuk mengonsumsi jenis makanan dan nutrisi tertentu yang sesuai dengan kebutuhan latihan dan tujuan yang ingin dicapai. Metode piring periodisasi gizi ini dapat membantu atlet untuk memaksimalkan performa dan meminimalkan risiko cedera serta kelelahan.
+                        Atlet endurance paling membutuhkan asupan karbohidrat. Karbohidrat berfungsi sebagai sumber utama energi yang dibutuhkan untuk aktivitas atlet. Selain itu, asupan lemak juga penting untuk menjaga fungsi hormon, mengatur hormon, dan memulihkan jaringan otot. Protein juga diperlukan dalam jumlah yang cukup untuk membangun dan memulihkan otot. Vitamin, mineral, air, dan serat juga diperlukan untuk menjaga kesehatan tubuh dan memperbaiki jaringan otot.
+                          Dalam konteks latihan, atlet endurance juga perlu memperhatikan penggunaan energi yang berbeda tergantung pada jenis olahraga dan intensitas latihan. Oleh karena itu, menu atlet harus disusun berdasarkan kebutuhan energi yang spesifik dan keberadaan zat gizi yang diperlukan.
+                 
+                    </p>
+                    <div class="row mb-4">
+                        <div class="col-lg-6">
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Sport Activites</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Outdoor Games</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-secondary"></i>Nutritious Foods</h6>
+                        </div>
+                        <div class="col-lg-6">
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2"></i>Highly Secured</h6>
+                            <h6 class="mb-3"><i class="fas fa-check-circle me-2 text-primary"></i>Friendly Environment</h6>
+                            <h6><i class="fas fa-check-circle me-2 text-secondary"></i>Qualified Teacher</h6>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary px-5 py-3 btn-border-radius">More Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+        <!-- Modal Video -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <footer class="footer">
+            <div class="section__container footer__container">
+                <div class="footer__col">
+                    <h3>Peduli Gizi</h3>
+                    <p>
+                        website ini adalah website untuk mengukur makanan yang cocok dengan tubuh anda
+                    </p>
+                    <p>
+                        Dengan antarmuka yang ramah pengguna dan beragam, Teman gizi bertujuan untuk memberikan pengalaman mengunkan web ini
+                </div>
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <p>About Us</p>
+                    <p>Our Team</p>
+                    <p>Blog</p>
+                    <p>Book</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Legal</h4>
+                    <p>FAQs</p>
+                    <p>Terms & Conditions</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Resources</h4>
+                    <p>Social Media</p>
+                    <p>Help Center</p>
+                    <p>Partnerships</p>
+                </div>
+            </div>
+            <div class="footer__bar">
+                Copyright © 2023 Gizi teknologi
+            </div>
+        </footer>
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+
+      
+
+
+
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
